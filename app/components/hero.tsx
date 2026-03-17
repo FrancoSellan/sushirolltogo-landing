@@ -9,7 +9,7 @@ export default function Hero() {
       <div className="fixed inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_right,rgba(180,80,40,0.15),transparent_60%)]" />
 
       <section
-        className="flex flex-col items-center justify-center overflow-clip px-6"
+        className="flex flex-col items-center justify-center overflow-clip px-6 py-10 md:py-0"
         style={{ height: "calc(100vh - 64px)" }}
       >
         <div className="w-full flex flex-col md:flex-row items-center gap-10 max-w-7xl mx-auto flex-1">

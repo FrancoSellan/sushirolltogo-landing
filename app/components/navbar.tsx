@@ -6,7 +6,7 @@ import {
   MenubarTrigger,
   MenubarContent,
   MenubarItem,
-} from "@/components/ui/menubar";
+} from "@/app/components/ui/menubar";
 
 export default function Navbar() {
   return (
