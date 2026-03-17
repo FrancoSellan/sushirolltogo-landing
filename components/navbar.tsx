@@ -1,33 +1,49 @@
+"use client";
+
+import {
+  Menubar,
+  MenubarMenu,
+  MenubarTrigger,
+  MenubarContent,
+  MenubarItem,
+} from "@/components/ui/menubar";
+
 export default function Navbar() {
   return (
-    <nav className="w-full border-b bg-white">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-
-        {/* Logo */}
-        <h1 className="text-xl font-bold">
-          Sushi Roll To Go
-        </h1>
-
-        {/* Links */}
-        <div className="flex items-center gap-6 text-sm font-medium">
-          <a href="#menu" className="hover:text-red-500">
-            Menu
-          </a>
-
-          <a href="#sucursales" className="hover:text-red-500">
-            Sucursales
-          </a>
-
-          <a href="#contacto" className="hover:text-red-500">
-            Contacto
-          </a>
-
-          <button className="rounded-md bg-red-500 px-4 py-2 text-white hover:bg-red-600">
-            Pedir ahora
-          </button>
-        </div>
-
+    <header className="w-full bg-transparent">
+      <div className="mx-auto flex h-16 max-w-7xl items-center justify-end px-6">
+        <Menubar className="border-none shadow-none">
+          <div>
+            <MenubarMenu>
+              <MenubarTrigger>Inicio</MenubarTrigger>
+            </MenubarMenu>
+          </div>
+          <div className="ml-3">
+            <MenubarMenu>
+              <MenubarTrigger>Menú</MenubarTrigger>
+              <MenubarContent>
+                <MenubarItem>Combos</MenubarItem>
+                <MenubarItem>Piezas especiales</MenubarItem>
+                <MenubarItem>Bebidas</MenubarItem>
+              </MenubarContent>
+            </MenubarMenu>
+          </div>
+          <div className="ml-3">
+            <MenubarMenu>
+              <MenubarTrigger>Sucursales</MenubarTrigger>
+              <MenubarContent>
+                <MenubarItem>Córdoba Centro</MenubarItem>
+                <MenubarItem>Nueva Córdoba</MenubarItem>
+              </MenubarContent>
+            </MenubarMenu>
+          </div>
+          <div className="ml-3">
+            <MenubarMenu>
+              <MenubarTrigger>Contacto</MenubarTrigger>
+            </MenubarMenu>
+          </div>
+        </Menubar>
       </div>
-    </nav>
-  )
+    </header>
+  );
 }
