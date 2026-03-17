@@ -11,7 +11,7 @@ import {
 export default function Navbar() {
   return (
     <header className="w-full bg-transparent">
-      <div className="mx-auto flex h-16 max-w-7xl items-center justify-end px-6">
+      <div className="mx-auto flex h-16 max-w-7xl items-center justify-center px-6">
         <Menubar className="border-none shadow-none">
           <div>
             <MenubarMenu>
