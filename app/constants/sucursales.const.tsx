@@ -18,6 +18,7 @@ export const SUCURSALES: Sucursal[] = [
     name: "Sucursal Luuma Fusión",
     image: "/sucursal-luuma.jpg",
     address: "Molino de torres 6710",
+    phone: "+54 3513 19-0289",
     hours: "Lun–Vie 12:00–23:00 | Sáb–Dom 12:00–00:00",
     badge: "Restaurant",
     rating: 4.8,

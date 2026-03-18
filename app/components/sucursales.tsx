@@ -48,7 +48,7 @@ export default function Sucursales() {
             viewport={{ once: true }}
           >
           <Card
-            className="bg-zinc-900 border-zinc-800 overflow-hidden group hover:border-gray-300/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(245,158,11,0.08)]"
+            className="bg-zinc-900 border-zinc-800 overflow-hidden group hover:border-gray-300/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(209,213,219,0.15)]"
           >
             {/* Image */}
             <div className="relative h-48 overflow-hidden">
@@ -79,15 +79,15 @@ export default function Sucursales() {
               </div>
               <CardDescription className="text-zinc-400 space-y-1.5 mt-2">
                 <span className="flex items-center gap-2">
-                  <MapPin className="w-3.5 h-3.5 text-amber-500 shrink-0" />
+                  <MapPin className="w-3.5 h-3.5 text-gray-300 shrink-0" />
                   {branch.address}
                 </span>
                 <span className="flex items-center gap-2">
-                  <Phone className="w-3.5 h-3.5 text-amber-500 shrink-0" />
+                  <Phone className="w-3.5 h-3.5 text-gray-300 shrink-0" />
                   {branch.phone}
                 </span>
                 <span className="flex items-center gap-2">
-                  <Clock className="w-3.5 h-3.5 text-amber-500 shrink-0" />
+                  <Clock className="w-3.5 h-3.5 text-gray-300 shrink-0" />
                   {branch.hours}
                 </span>
               </CardDescription>
@@ -96,14 +96,13 @@ export default function Sucursales() {
             {/* Footer */}
             <CardFooter className="pt-2 gap-2">
               <Button
-                variant="outline"
-                className="flex-1"
+                className="flex-1 bg-gray-300 hover:bg-gray-500 text-zinc-950 font-semibold"
                 onClick={() => window.open(`${branch.menuUrl}`)}
               >
                 Menú
               </Button>
               <Button
-                className="flex-1 bg-amber-500 hover:bg-amber-400 text-zinc-950 font-semibold"
+                className="flex-1 bg-gray-300 hover:bg-gray-500 text-zinc-950 font-semibold"
                 onClick={() => window.open(branch.mapsUrl, "_blank")}
               >
                 Cómo llegar
