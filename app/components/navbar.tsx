@@ -22,19 +22,14 @@ export default function Navbar() {
             <MenubarMenu>
               <MenubarTrigger>Menú</MenubarTrigger>
               <MenubarContent>
-                <MenubarItem>Combos</MenubarItem>
-                <MenubarItem>Piezas especiales</MenubarItem>
-                <MenubarItem>Bebidas</MenubarItem>
+                <MenubarItem>Sucursal Recta Martinolli</MenubarItem>
+                <MenubarItem>Sucursal Luuma</MenubarItem>
               </MenubarContent>
             </MenubarMenu>
           </div>
           <div className="ml-3">
             <MenubarMenu>
               <MenubarTrigger>Sucursales</MenubarTrigger>
-              <MenubarContent>
-                <MenubarItem>Córdoba Centro</MenubarItem>
-                <MenubarItem>Nueva Córdoba</MenubarItem>
-              </MenubarContent>
             </MenubarMenu>
           </div>
           <div className="ml-3">
