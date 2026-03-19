@@ -8,6 +8,10 @@ import {
   MenubarItem,
 } from "@/app/components/ui/menubar";
 
+function scrollTo(id: string) {
+  document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+}
+
 export default function Navbar() {
   return (
     <header className="w-full bg-transparent">
@@ -15,7 +19,7 @@ export default function Navbar() {
         <Menubar className="border-none shadow-none">
           <div>
             <MenubarMenu>
-              <MenubarTrigger>Inicio</MenubarTrigger>
+              <MenubarTrigger onClick={() => scrollTo("inicio")}>Inicio</MenubarTrigger>
             </MenubarMenu>
           </div>
           <div className="ml-3">
@@ -29,7 +33,12 @@ export default function Navbar() {
           </div>
           <div className="ml-3">
             <MenubarMenu>
-              <MenubarTrigger>Sucursales</MenubarTrigger>
+              <MenubarTrigger onClick={() => scrollTo("sucursales")}>Sucursales</MenubarTrigger>
+            </MenubarMenu>
+          </div>
+          <div className="ml-3">
+            <MenubarMenu>
+              <MenubarTrigger onClick={() => scrollTo("opiniones")}>Opiniones</MenubarTrigger>
             </MenubarMenu>
           </div>
           <div className="ml-3">
