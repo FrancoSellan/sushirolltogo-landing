@@ -82,7 +82,7 @@ export default function Hero() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            <div className="w-full max-w-xs sm:max-w-2xl md:max-w-3xl">
+            <div className="w-full max-w-xs sm:max-w-xs md:max-w-2xl">
             <Carousel className="w-full" setApi={handleSetApi}>
               <CarouselContent>
                 <CarouselItem>

@@ -6,7 +6,6 @@ import useEmblaCarousel, {
 } from "embla-carousel-react"
 
 import { cn } from "@/lib/utils"
-import { Button } from "@/app/components/ui/button"
 import { ChevronLeftIcon, ChevronRightIcon } from "lucide-react"
 
 type CarouselApi = UseEmblaCarouselType[1]
@@ -173,61 +172,55 @@ function CarouselItem({ className, ...props }: React.ComponentProps<"div">) {
 
 function CarouselPrevious({
   className,
-  variant = "outline",
-  size = "icon-sm",
   ...props
-}: React.ComponentProps<typeof Button>) {
+}: React.ComponentProps<"button">) {
   const { orientation, scrollPrev, canScrollPrev } = useCarousel()
 
   return (
-    <Button
+    <button
       data-slot="carousel-previous"
-      variant={variant}
-      size={size}
       className={cn(
-        "absolute touch-manipulation rounded-full",
+        "absolute touch-manipulation transition-opacity",
+        "text-gray-400 hover:text-gray-200 disabled:opacity-20",
         orientation === "horizontal"
-          ? "top-1/2 -left-12 -translate-y-1/2"
-          : "-top-12 left-1/2 -translate-x-1/2 rotate-90",
+          ? "top-1/2 -left-8 -translate-y-1/2"
+          : "-top-8 left-1/2 -translate-x-1/2 rotate-90",
         className
       )}
       disabled={!canScrollPrev}
       onClick={scrollPrev}
       {...props}
     >
-      <ChevronLeftIcon />
+      <ChevronLeftIcon size={20} />
       <span className="sr-only">Previous slide</span>
-    </Button>
+    </button>
   )
 }
 
 function CarouselNext({
   className,
-  variant = "outline",
-  size = "icon-sm",
   ...props
-}: React.ComponentProps<typeof Button>) {
+}: React.ComponentProps<"button">) {
   const { orientation, scrollNext, canScrollNext } = useCarousel()
 
   return (
-    <Button
+    <button
       data-slot="carousel-next"
-      variant={variant}
-      size={size}
       className={cn(
-        "absolute touch-manipulation rounded-full",
+        "absolute touch-manipulation transition-opacity",
+        "text-gray-400 hover:text-gray-200 disabled:opacity-20",
         orientation === "horizontal"
-          ? "top-1/2 -right-12 -translate-y-1/2"
-          : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90",
+          ? "top-1/2 -right-8 -translate-y-1/2"
+          : "-bottom-8 left-1/2 -translate-x-1/2 rotate-90",
         className
       )}
       disabled={!canScrollNext}
       onClick={scrollNext}
       {...props}
     >
-      <ChevronRightIcon />
+      <ChevronRightIcon size={20} />
       <span className="sr-only">Next slide</span>
-    </Button>
+    </button>
   )
 }
 
