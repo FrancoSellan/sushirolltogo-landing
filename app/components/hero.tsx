@@ -28,13 +28,13 @@ export default function Hero() {
       <div className="fixed inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_right,rgba(180,80,40,0.15),transparent_60%)]" />
 
       <section
-        className="flex flex-col items-center justify-center overflow-clip px-6 py-10 md:py-0"
+        className="flex flex-col items-center justify-center overflow-clip px-6 py-15 md:py-0"
         style={{ height: "calc(100vh - 64px)" }}
       >
         <div className="w-full flex flex-col md:flex-row items-center gap-10 flex-1">
-          <div className="w-full md:w-1/2 flex flex-col items-center justify-center text-center">
+          <div className="w-full md:w-1/2 flex flex-col items-center justify-center text-center mt-5">
             <motion.div
-              className="mt-6 md:mt-0"
+              className="mt-10 md:mt-0"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
@@ -171,7 +171,7 @@ export default function Hero() {
         </div>
 
         <motion.div
-          className="pb-6"
+          className="pb-6 mt-6"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 1 }}
