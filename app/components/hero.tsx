@@ -28,11 +28,11 @@ export default function Hero() {
       <div className="fixed inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_right,rgba(180,80,40,0.15),transparent_60%)]" />
 
       <section
-        className="flex flex-col items-center justify-center overflow-clip px-6 py-15 md:py-0"
-        style={{ height: "calc(100vh - 64px)" }}
+        className="flex flex-col items-center justify-center px-6 py-5 md:py-0"
+        style={{ minHeight: "calc(100vh - 64px)" }}
       >
         <div className="w-full flex flex-col md:flex-row items-center gap-10 flex-1">
-          <div className="w-full md:w-1/2 flex flex-col items-center justify-center text-center mt-5">
+          <div className="w-full md:w-1/2 flex flex-col items-center justify-center text-center">
             <motion.div
               className="mt-10 md:mt-0"
               initial={{ opacity: 0, y: 20 }}
@@ -83,9 +83,6 @@ export default function Hero() {
             >
               Fundado en la ciudad de Córdoba, donde los encuentros tienen su propio ritmo,
               Sushi Roll To Go propone una experiencia cercana y auténtica.
-              <br/>
-              Sushi pensado para disfrutar sin apuro, con atención en cada
-              detalle.
             </motion.p>
           </div>
 
