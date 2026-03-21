@@ -34,7 +34,7 @@ export default function Hero() {
         <div className="w-full flex flex-col md:flex-row items-center gap-10 flex-1">
           <div className="w-full md:w-1/2 flex flex-col items-center justify-center text-center">
             <motion.div
-              className="mt-3.5 md:mt-0"
+              className="mt-2 md:mt-0"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
