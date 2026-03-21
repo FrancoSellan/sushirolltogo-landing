@@ -167,7 +167,7 @@ export default function Hero() {
         </div>
 
         <motion.div
-          className="pb-6 mt-6"
+          className="pb-6 mt-6 hidden md:block"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 1 }}
