@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="w-full bg-gray-700 py-6">
+    <footer className="w-full bg-[rgb(53,51,51)] py-6">
       <div className="mx-auto flex max-w-7xl items-center justify-center gap-6 px-6">
         <a
           className="text-gray-300 text-sm hover:text-white transition-colors"

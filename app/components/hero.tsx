@@ -3,7 +3,15 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, type CarouselApi } from "./ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+  type CarouselApi,
+} from "./ui/carousel";
 
 const TOTAL_SLIDES = 5;
 
@@ -72,7 +80,11 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6 }}
             >
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam debitis, consectetur illo laboriosam quaerat molestias quasi expedita dicta quibusdam, amet consequatur numquam velit voluptates, qui eveniet atque similique maiores pariatur.
+              Fundado en la ciudad de Córdoba, donde los encuentros tienen su propio ritmo,
+              Sushi Roll To Go propone una experiencia cercana y auténtica.
+              <br/>
+              Sushi pensado para disfrutar sin apuro, con atención en cada
+              detalle.
             </motion.p>
           </div>
 
@@ -83,72 +95,76 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.4 }}
           >
             <div className="w-full max-w-xs sm:max-w-xs md:max-w-2xl">
-            <Carousel className="w-full" setApi={handleSetApi}>
-              <CarouselContent>
-                <CarouselItem>
-                  <div className="relative w-full aspect-4/3 rounded-xl overflow-hidden">
-                    <Image
-                      src="/hero-carrusel-fotos/foto-cuchillo-sushi.jpg"
-                      alt="Foto sushi 1"
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                </CarouselItem>
-                <CarouselItem>
-                  <div className="relative w-full aspect-4/3 rounded-xl overflow-hidden">
-                    <Image
-                      src="/hero-carrusel-fotos/foto-feel.jpg"
-                      alt="Foto sushi 2"
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                </CarouselItem>
-                <CarouselItem>
-                  <div className="relative w-full aspect-4/3 rounded-xl overflow-hidden">
-                    <Image
-                      src="/foto-del-hero.jpg"
-                      alt="Foto sushi 3"
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                </CarouselItem>
-                <CarouselItem>
-                  <div className="relative w-full aspect-4/3 rounded-xl overflow-hidden">
-                    <Image
-                      src="/foto-del-hero.jpg"
-                      alt="Foto sushi 4"
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                </CarouselItem>
-                <CarouselItem>
-                  <div className="relative w-full aspect-4/3 rounded-xl overflow-hidden">
-                    <Image
-                      src="/foto-del-hero.jpg"
-                      alt="Foto sushi 5"
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                </CarouselItem>
-              </CarouselContent>
-              <CarouselPrevious className="hidden md:flex" />
-              <CarouselNext className="hidden md:flex" />
-            </Carousel>
-            <div className="flex justify-center gap-2 mt-3 mb-1">
-              {Array.from({ length: TOTAL_SLIDES }).map((_, i) => (
-                <div
-                  key={i}
-                  className={`h-1.5 rounded-full transition-all duration-300 ${
-                    i === current ? "w-4 bg-gray-300" : "w-1.5 bg-gray-500"
-                  }`}
-                />
-              ))}
-            </div>
+              <Carousel
+                className="w-full"
+                setApi={handleSetApi}
+                plugins={[Autoplay({ delay: 3000, stopOnInteraction: false })]}
+              >
+                <CarouselContent>
+                  <CarouselItem>
+                    <div className="relative w-full aspect-4/3 rounded-xl overflow-hidden">
+                      <Image
+                        src="/hero-carrusel-fotos/foto-hero-2.jpg"
+                        alt="Foto sushi 1"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                  </CarouselItem>
+                  <CarouselItem>
+                    <div className="relative w-full aspect-4/3 rounded-xl overflow-hidden">
+                      <Image
+                        src="/hero-carrusel-fotos/foto-hero-5.jpg"
+                        alt="Foto sushi 2"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                  </CarouselItem>
+                  <CarouselItem>
+                    <div className="relative w-full aspect-4/3 rounded-xl overflow-hidden">
+                      <Image
+                        src="/hero-carrusel-fotos/foto-hero.jpg"
+                        alt="Foto sushi 3"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                  </CarouselItem>
+                  <CarouselItem>
+                    <div className="relative w-full aspect-4/3 rounded-xl overflow-hidden">
+                      <Image
+                        src="/hero-carrusel-fotos/foto-hero-3.jpg"
+                        alt="Foto sushi 4"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                  </CarouselItem>
+                  <CarouselItem>
+                    <div className="relative w-full aspect-4/3 rounded-xl overflow-hidden">
+                      <Image
+                        src="/hero-carrusel-fotos/foto-hero-4.jpg"
+                        alt="Foto sushi 5"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                  </CarouselItem>
+                </CarouselContent>
+                <CarouselPrevious className="hidden md:flex" />
+                <CarouselNext className="hidden md:flex" />
+              </Carousel>
+              <div className="flex justify-center gap-2 mt-3 mb-1">
+                {Array.from({ length: TOTAL_SLIDES }).map((_, i) => (
+                  <div
+                    key={i}
+                    className={`h-1.5 rounded-full transition-all duration-300 ${
+                      i === current ? "w-4 bg-gray-300" : "w-1.5 bg-gray-500"
+                    }`}
+                  />
+                ))}
+              </div>
             </div>
           </motion.div>
         </div>
