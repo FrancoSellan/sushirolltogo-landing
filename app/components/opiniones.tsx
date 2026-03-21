@@ -27,7 +27,7 @@ export function Opiniones() {
         </h2>
       </motion.div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-5xl">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-5xl">
         {OPINIONES.map((opinion, index) => (
           <motion.div
             key={opinion.id}

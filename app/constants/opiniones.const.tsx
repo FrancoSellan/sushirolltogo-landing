@@ -22,4 +22,11 @@ export const OPINIONES: Opinion[] = [
     descripcion:
       "Excelente el servicio, la comida súper fresca, súper recomendable el lugar tanto para llevar o comer en el lugar.",
   },
+  {
+    id: 4,
+    rating: 5,
+    nombre: "Maria Clara Garramuño",
+    descripcion:
+      "Riquísimo todo. Los ingredientes de muy buena calidad y muy frescos. Muy recomendable.",
+  },
 ];

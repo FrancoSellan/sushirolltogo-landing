@@ -88,7 +88,7 @@ export default function Hero() {
                 <CarouselItem>
                   <div className="relative w-full aspect-4/3 rounded-xl overflow-hidden">
                     <Image
-                      src="/foto-del-hero.jpg"
+                      src="/hero-carrusel-fotos/foto-cuchillo-sushi.jpg"
                       alt="Foto sushi 1"
                       fill
                       className="object-cover"
@@ -98,7 +98,7 @@ export default function Hero() {
                 <CarouselItem>
                   <div className="relative w-full aspect-4/3 rounded-xl overflow-hidden">
                     <Image
-                      src="/foto-del-hero.jpg"
+                      src="/hero-carrusel-fotos/foto-feel.jpg"
                       alt="Foto sushi 2"
                       fill
                       className="object-cover"
