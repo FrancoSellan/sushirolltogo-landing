@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Oswald } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 
 const oswald = Oswald({
   subsets: ["latin"],
@@ -19,6 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={` ${oswald.className} bg-[#1a1a1a] text-gray-300`}>
+        <Analytics />
         {children}
       </body>
     </html>
