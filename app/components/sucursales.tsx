@@ -70,7 +70,7 @@ export default function Sucursales() {
       </motion.div>
 
       {/* Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-3xl">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-5xl">
         {SUCURSALES.map((branch, index) => (
           <motion.div
             key={branch.id}
@@ -125,21 +125,23 @@ export default function Sucursales() {
               </CardHeader>
 
               {/* Footer */}
-              <CardFooter className="pt-2 gap-2">
+              <CardFooter className="pt-2 flex-col gap-2">
+                <div className="flex gap-2 w-full">
+                  <Button
+                    className="flex-1 bg-gray-300 hover:bg-gray-500 text-zinc-950 font-semibold"
+                    onClick={() => window.open(`${branch.menuUrl}`)}
+                  >
+                    Menú
+                  </Button>
+                  <Button
+                    className="flex-1 bg-gray-300 hover:bg-gray-500 text-zinc-950 font-semibold"
+                    onClick={() => window.open(branch.mapsUrl, "_blank")}
+                  >
+                    Cómo llegar
+                  </Button>
+                </div>
                 <Button
-                  className="flex-1 bg-gray-300 hover:bg-gray-500 text-zinc-950 font-semibold"
-                  onClick={() => window.open(`${branch.menuUrl}`)}
-                >
-                  Menú
-                </Button>
-                <Button
-                  className="flex-1 bg-gray-300 hover:bg-gray-500 text-zinc-950 font-semibold"
-                  onClick={() => window.open(branch.mapsUrl, "_blank")}
-                >
-                  Cómo llegar
-                </Button>
-                <Button
-                  className="flex-1 bg-gray-300 hover:bg-gray-500 text-zinc-950 font-semibold"
+                  className="w-full bg-gray-300 hover:bg-gray-500 text-zinc-950 font-semibold"
                   onClick={() => window.open(PEDIDO_URL, "_blank")}
                 >
                   Hacé tu pedido ó reservá
