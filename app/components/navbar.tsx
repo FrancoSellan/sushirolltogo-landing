@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+import { useRouter, usePathname } from "next/navigation";
 import {
   Menubar,
   MenubarMenu,
@@ -13,13 +15,24 @@ function scrollTo(id: string) {
 }
 
 export default function Navbar() {
+  const router = useRouter();
+  const pathname = usePathname();
+
+  function goToSection(id: string) {
+    if (pathname === "/") {
+      scrollTo(id);
+    } else {
+      router.push(`/#${id}`);
+    }
+  }
+
   return (
     <header className="w-full bg-transparent">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-center px-6">
         <Menubar className="border-none shadow-none">
           <div>
             <MenubarMenu>
-              <MenubarTrigger onClick={() => scrollTo("inicio")}>
+              <MenubarTrigger onClick={() => goToSection("inicio")}>
                 Inicio
               </MenubarTrigger>
             </MenubarMenu>
@@ -29,7 +42,7 @@ export default function Navbar() {
               <MenubarTrigger>Menú</MenubarTrigger>
               <MenubarContent>
                 <MenubarItem asChild>
-                  <a href="https://drive.google.com/file/d/1f1IljibiRasi6h5ZT9Uw9zYDOZgJlrTT/view?usp=sharing" target="_blank" rel="noopener noreferrer">Sucursal Recta Martinolli</a>
+                  <Link href="/carta/recta-martinolli">Sucursal Recta Martinolli</Link>
                 </MenubarItem>
                 <MenubarItem asChild>
                   <a href="https://menu.fu.do/luumacba/qr-menu" target="_blank" rel="noopener noreferrer">Sucursal Luuma</a>
@@ -42,14 +55,14 @@ export default function Navbar() {
           </div>
           <div className="ml-3">
             <MenubarMenu>
-              <MenubarTrigger onClick={() => scrollTo("sucursales")}>
+              <MenubarTrigger onClick={() => goToSection("sucursales")}>
                 Sucursales
               </MenubarTrigger>
             </MenubarMenu>
           </div>
           <div className="ml-3">
             <MenubarMenu>
-              <MenubarTrigger onClick={() => scrollTo("opiniones")}>
+              <MenubarTrigger onClick={() => goToSection("opiniones")}>
                 Opiniones
               </MenubarTrigger>
             </MenubarMenu>
