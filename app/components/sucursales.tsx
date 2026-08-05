@@ -12,6 +12,7 @@ import {
 import { MapPin, Clock, Phone, Star, Bike } from "lucide-react";
 import { SUCURSALES } from "@/app/constants/sucursales.const";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import Autoplay from "embla-carousel-autoplay";
 import { Carousel, CarouselContent, CarouselItem } from "./ui/carousel";
@@ -47,6 +48,8 @@ function BranchCarousel({
 }
 
 export default function Sucursales() {
+  const router = useRouter();
+
   return (
     <section className="min-h-screen flex flex-col items-center justify-center px-6 py-16">
       {/* Header */}
@@ -129,7 +132,7 @@ export default function Sucursales() {
                 <div className="flex gap-2 w-full">
                   <Button
                     className="flex-1 bg-gray-300 hover:bg-gray-500 text-zinc-950 font-semibold"
-                    onClick={() => window.open(`${branch.menuUrl}`)}
+                    onClick={() => router.push("/carta/recta-martinolli")}
                   >
                     Menú
                   </Button>

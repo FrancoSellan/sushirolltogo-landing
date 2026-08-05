@@ -53,7 +53,7 @@ export const ROLLS_PREMIUM_RECTA_MARTINOLLI: Producto[] = [
     id: 42,
     nombre: "Bali 8 Unidades (sushi postre)",
     descripcion:
-      "Relleno de pomelo, limón, queso crema, envuelto en tamago, cubierto por palta. Acompañado de salsa de mango, almendras, chocolate amargo y ralladura de cítricos.",
+      "Relleno de fruta de estación, queso crema, envuelto en tamago, cubierto por palta. Acompañado de salsa de mango, almendras, chocolate amargo y ralladura de cítricos.",
     precio: 19400,
     imagen: "",
   },
