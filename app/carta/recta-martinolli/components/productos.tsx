@@ -25,16 +25,16 @@ export default function Productos({ categoria, productos }: ProductosProps) {
             className="flex items-start justify-between gap-4 py-4"
           >
             <div className="min-w-0">
-              <h3 className="font-medium tracking-wide text-gray-100">
+              <h3 className="font-medium tracking-wide text-zinc-300">
                 {producto.nombre}
               </h3>
               {producto.descripcion && (
-                <p className="mt-1 text-sm leading-relaxed text-zinc-400">
+                <p className="mt-1 text-sm leading-relaxed text-zinc-500">
                   {producto.descripcion}
                 </p>
               )}
             </div>
-            <span className="shrink-0 font-semibold tabular-nums text-amber-400">
+            <span className="shrink-0 font-semibold tabular-nums text-zinc-300">
               ${producto.precio.toLocaleString("es-AR")}
             </span>
           </motion.div>

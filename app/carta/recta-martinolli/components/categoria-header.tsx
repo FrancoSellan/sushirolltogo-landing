@@ -26,8 +26,8 @@ export default function CategoriaHeader({
       <h2
         className={
           size === "lg"
-            ? "whitespace-nowrap text-xl font-bold uppercase tracking-[0.15em] text-white md:text-2xl"
-            : "whitespace-nowrap text-sm font-semibold uppercase tracking-[0.2em] text-amber-400/90"
+            ? "whitespace-nowrap text-xl font-bold uppercase tracking-[0.15em] text-white md:text-xl"
+            : "whitespace-nowrap text-sm font-semibold uppercase tracking-[0.2em] text-white"
         }
       >
         {titulo}
@@ -35,7 +35,7 @@ export default function CategoriaHeader({
       <div
         className={
           size === "lg"
-            ? "h-px flex-1 bg-linear-to-r from-amber-500/50 to-zinc-800"
+            ? "h-px flex-1 bg-linear-to-r  to-zinc-800"
             : "h-px flex-1 bg-zinc-800"
         }
       />
