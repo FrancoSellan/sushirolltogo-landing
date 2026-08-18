@@ -31,5 +31,13 @@ export const ENTRADAS_RECTA_MARTINOLLI: Producto[] = [
       "4 croquetas apanadas rellenas con salmón y queso saborizado. Acompañadas con salsa roca.",
     precio: 11000,
     imagen: "",
+  },
+  {
+    id: 51,
+    nombre: "Rabas",
+    descripcion:
+      "Aros de calamar apanados.",
+    precio: 18000,
+    imagen: "",
   }
 ];
