@@ -6,7 +6,7 @@ export const PRINCIPALES_RECTA_MARTINOLLI: Producto[] = [
     nombre: "Salmón Teriyaki",
     descripcion:
       "Salmón sellado con piel, glaseado con salsa teriyaki, acompañado de arroz aromatizado y vegetales salteados.",
-    precio: 36400,
+    precio: 38300,
     imagen: "",
   },
 ];

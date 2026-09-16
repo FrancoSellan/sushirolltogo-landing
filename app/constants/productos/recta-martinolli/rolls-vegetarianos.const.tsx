@@ -6,7 +6,7 @@ export const ROLLS_VEGETARIANOS_RECTA_MARTINOLLI: Producto[] = [
     nombre: "Paris Roll 9 Unidades",
     descripcion:
       "Relleno de verduras grilladas, semicubierto por láminas de palta top de verdeo acompañado con salsa de soja saborizada.",
-    precio: 14600,
+    precio: 15400,
     imagen: "",
   },
   {
@@ -14,7 +14,7 @@ export const ROLLS_VEGETARIANOS_RECTA_MARTINOLLI: Producto[] = [
     nombre: "Fiji Roll (sin arroz) 9 Unidades",
     descripcion:
       "Roll relleno de queso saborizado, morrones salteados y verdeo. Envuelto en tamago, bañado en salsa huancaína.",
-    precio: 14600,
+    precio: 15400,
     imagen: "",
   },
 ];

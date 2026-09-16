@@ -5,7 +5,7 @@ export const ENTRADAS_RECTA_MARTINOLLI: Producto[] = [
     id: 1,
     nombre: "Arrolladitos Primavera 3 Unidades",
     descripcion: "Empanaditas chinas de carne.",
-    precio: 6000,
+    precio: 6300,
     imagen: "",
   },
   {
@@ -13,7 +13,7 @@ export const ENTRADAS_RECTA_MARTINOLLI: Producto[] = [
     nombre: "Langostinos Crujientes 3 Unidades",
     descripcion:
       "Macerados, cubiertos de panko. Acompañados de salsa roca, togarashi, crocantes de tempura. (Opcional): verdeo.",
-    precio: 11500,
+    precio: 12100,
     imagen: "",
   },
   {
@@ -21,7 +21,7 @@ export const ENTRADAS_RECTA_MARTINOLLI: Producto[] = [
     nombre: "Kanikama Relleno 3 Unidades",
     descripcion:
       "Kanikama relleno de queso saborizado, hondashi y verdeo, acompañado con salsa roca, togarashi y crocante de tempura. (Opcional): verdeo.",
-    precio: 12000,
+    precio: 12600,
     imagen: "",
   },
   {
@@ -29,7 +29,7 @@ export const ENTRADAS_RECTA_MARTINOLLI: Producto[] = [
     nombre: "Croquetas de salmón 4 Unidades",
     descripcion:
       "4 croquetas apanadas rellenas con salmón y queso saborizado. Acompañadas con salsa roca.",
-    precio: 11000,
+    precio: 11600,
     imagen: "",
   }
 ];
