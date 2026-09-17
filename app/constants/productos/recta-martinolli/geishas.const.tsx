@@ -5,14 +5,14 @@ export const GEISHAS_RECTA_MARTINOLLI: Producto[] = [
     id: 6,
     nombre: "Geishas de Salmón 6 Unidades",
     descripcion: "",
-    precio: 14000,
+    precio: 14700,
     imagen: "",
   },
   {
     id: 7,
     nombre: "Geishas de Salmón Ahumado 6 Unidades",
     descripcion: "",
-    precio: 14700,
+    precio: 15500,
     imagen: "",
   },
 ];

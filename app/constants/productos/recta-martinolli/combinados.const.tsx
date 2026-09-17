@@ -8,7 +8,7 @@ export const COMBINADOS_RECTA_MARTINOLLI: Combinado[] = [
     tipo: [
       {
         cantidadPiezas: 30,
-        precio: 33700,
+        precio: 35400,
       },
     ],
     imagen: "",
@@ -21,15 +21,15 @@ export const COMBINADOS_RECTA_MARTINOLLI: Combinado[] = [
     tipo: [
       {
         cantidadPiezas: 15,
-        precio: 21420,
+        precio: 22500,
       },
       {
         cantidadPiezas: 30,
-        precio: 39900,
+        precio: 41900,
       },
       {
         cantidadPiezas: 45,
-        precio: 54000,
+        precio: 56700,
       },
     ],
     imagen: "",
@@ -42,11 +42,11 @@ export const COMBINADOS_RECTA_MARTINOLLI: Combinado[] = [
     tipo: [
       {
         cantidadPiezas: 15,
-        precio: 24200,
+        precio: 25500,
       },
       {
         cantidadPiezas: 30,
-        precio: 44000,
+        precio: 46200,
       },
     ],
     imagen: "",
@@ -59,11 +59,11 @@ export const COMBINADOS_RECTA_MARTINOLLI: Combinado[] = [
     tipo: [
       {
         cantidadPiezas: 30,
-        precio: 50400,
+        precio: 53000,
       },
       {
         cantidadPiezas: 45,
-        precio: 71000,
+        precio: 74600,
       },
     ],
     imagen: "",
@@ -76,15 +76,15 @@ export const COMBINADOS_RECTA_MARTINOLLI: Combinado[] = [
     tipo: [
       {
         cantidadPiezas: 15,
-        precio: 29700,
+        precio: 31200,
       },
       {
         cantidadPiezas: 30,
-        precio: 44700,
+        precio: 47000,
       },
       {
         cantidadPiezas: 45,
-        precio: 59300,
+        precio: 62300,
       },
     ],
     imagen: "",
@@ -96,15 +96,15 @@ export const COMBINADOS_RECTA_MARTINOLLI: Combinado[] = [
     tipo: [
       {
         cantidadPiezas: 15,
-        precio: 32500,
+        precio: 34200,
       },
       {
         cantidadPiezas: 30,
-        precio: 48300,
+        precio: 50800,
       },
       {
         cantidadPiezas: 45,
-        precio: 63300,
+        precio: 66500,
       },
     ],
     imagen: "",
@@ -116,7 +116,7 @@ export const COMBINADOS_RECTA_MARTINOLLI: Combinado[] = [
     tipo: [
       {
         cantidadPiezas: 20,
-        precio: 25000,
+        precio: 26300,
       },
     ],
     imagen: "",

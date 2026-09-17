@@ -6,7 +6,7 @@ export const GOHAN_RECTA_MARTINOLLI: Producto[] = [
     nombre: "Gohan de Salmón Real",
     descripcion:
       "Base de arroz con palta, queso philadelphia, langostino futu y salmón. Decorado con crocante de tempura, verdeo y semillas de sésamo.",
-    precio: 18300,
+    precio: 19300,
     imagen: "",
   },
   {
@@ -14,7 +14,7 @@ export const GOHAN_RECTA_MARTINOLLI: Producto[] = [
     nombre: "Gohan con Mejillones y Kanikama",
     descripcion:
       "Base de arroz con palta, queso philadelphia, mejillones y kanikama. Decorado con crocante de tempura, verdeo y semillas de sésamo.",
-    precio: 17200,
+    precio: 18100,
     imagen: "",
   },
   {
@@ -22,7 +22,7 @@ export const GOHAN_RECTA_MARTINOLLI: Producto[] = [
     nombre: "Gohan Veggie",
     descripcion:
       "Base de arroz con palta, queso philadelphia, salteado de verduras cocidas, huevo duro.",
-    precio: 17200,
+    precio: 18100,
     imagen: "",
   },
 ];

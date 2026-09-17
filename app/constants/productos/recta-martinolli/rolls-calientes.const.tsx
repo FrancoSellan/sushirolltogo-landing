@@ -6,7 +6,7 @@ export const ROLLS_CALIENTES_RECTA_MARTINOLLI: Producto[] = [
     nombre: "Futurama Roll 8 Unidades",
     descripcion:
       "Surimi (pasta de pescado) rebozado en panko y huevo, queso saborizado (pasta boom) envuelto en nori, arroz apanado con panko y con salsa roca.",
-    precio: 16800,
+    precio: 17700,
     imagen: "",
   },
   {
@@ -14,7 +14,7 @@ export const ROLLS_CALIENTES_RECTA_MARTINOLLI: Producto[] = [
     nombre: "Ceviche Roll 4 Unidades",
     descripcion:
       "Relleno de salmón y verduras marinadas en cilantro y picante. Envuelto en salmón y con salsa roca.",
-    precio: 15400,
+    precio: 16300,
     imagen: "",
   },
   {
@@ -22,7 +22,7 @@ export const ROLLS_CALIENTES_RECTA_MARTINOLLI: Producto[] = [
     nombre: "Boom 6 Unidades",
     descripcion:
       "Finos cortes de salmón, con queso crema saborizado, cubierto de masa tempura.",
-    precio: 10200,
+    precio: 10700,
     imagen: "",
   },
   {
@@ -30,7 +30,7 @@ export const ROLLS_CALIENTES_RECTA_MARTINOLLI: Producto[] = [
     nombre: "Boom de Salmón Ahumado 6 Unidades",
     descripcion:
       "Finos cortes de salmón ahumado, con queso crema saborizado, cubierto de masa tempura.",
-    precio: 10700,
+    precio: 11300,
     imagen: "",
   },
 ];

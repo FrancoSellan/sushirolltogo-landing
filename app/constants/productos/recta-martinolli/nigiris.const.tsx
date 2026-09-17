@@ -5,14 +5,14 @@ export const NIGIRIS_RECTA_MARTINOLLI: Producto[] = [
     id: 8,
     nombre: "Nigiris de Salmón 6 Unidades",
     descripcion: "",
-    precio: 13900,
+    precio: 14600,
     imagen: "",
   },
   {
     id: 9,
     nombre: "Nigiris de Salmón Ahumado 6 Unidades",
     descripcion: "",
-    precio: 14900,
+    precio: 15700,
     imagen: "",
   },
 ];
