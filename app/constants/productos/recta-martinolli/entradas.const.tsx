@@ -3,32 +3,32 @@ import { Producto } from "@/app/models/Producto";
 export const ENTRADAS_RECTA_MARTINOLLI: Producto[] = [
   {
     id: 1,
-    nombre: "Arrolladitos Primavera 3 Unidades",
-    descripcion: "Empanaditas chinas de carne.",
+    nombre: "Arrolladitos Primavera",
+    descripcion: "3 unidades de empanaditas chinas de carne.",
     precio: 6300,
     imagen: "",
   },
   {
     id: 2,
-    nombre: "Langostinos Crujientes 3 Unidades",
+    nombre: "Langostinos Crujientes",
     descripcion:
-      "Macerados, cubiertos de panko. Acompañados de salsa roca, togarashi, crocantes de tempura. (Opcional): verdeo.",
+      "3 unidades de langostinos macerados, cubiertos de panko. Acompañados de salsa roca, togarashi, crocantes de tempura. (Opcional): verdeo.",
     precio: 12100,
     imagen: "",
   },
   {
     id: 3,
-    nombre: "Kanikama Relleno 3 Unidades",
+    nombre: "Kanikamas Rellenos",
     descripcion:
-      "Kanikama relleno de queso saborizado, hondashi y verdeo, acompañado con salsa roca, togarashi y crocante de tempura. (Opcional): verdeo.",
+      "3 unidades de kanikamas rellenos de queso saborizado, hondashi y verdeo, acompañado con salsa roca, togarashi y crocante de tempura. (Opcional): verdeo.",
     precio: 12600,
     imagen: "",
   },
   {
     id: 50,
-    nombre: "Croquetas de salmón 4 Unidades",
+    nombre: "Croquetas de salmón",
     descripcion:
-      "4 croquetas apanadas rellenas con salmón y queso saborizado. Acompañadas con salsa roca.",
+      "4 unidades de croquetas apanadas rellenas con salmón y queso saborizado. Acompañadas con salsa roca.",
     precio: 11600,
     imagen: "",
   }
