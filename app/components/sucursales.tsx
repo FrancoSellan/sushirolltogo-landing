@@ -132,7 +132,11 @@ export default function Sucursales() {
                 <div className="flex gap-2 w-full">
                   <Button
                     className="flex-1 bg-gray-300 hover:bg-gray-500 text-zinc-950 font-semibold"
-                    onClick={() => router.push("/carta/recta-martinolli")}
+                    onClick={() =>
+                      branch.menuUrl.startsWith("/")
+                        ? router.push(branch.menuUrl)
+                        : window.open(branch.menuUrl, "_blank")
+                    }
                   >
                     Menú
                   </Button>

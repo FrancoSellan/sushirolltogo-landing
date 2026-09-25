@@ -48,7 +48,7 @@ export default function Navbar() {
                   <a href="https://menu.fu.do/luumacba/qr-menu" target="_blank" rel="noopener noreferrer">Sucursal Luuma</a>
                 </MenubarItem>
                 <MenubarItem asChild>
-                  <a href="https://drive.google.com/file/d/1f1IljibiRasi6h5ZT9Uw9zYDOZgJlrTT/view?usp=sharing" target="_blank" rel="noopener noreferrer">Sucursal Manantiales 1</a>
+                  <a href="https://menu.fu.do/sushirolltogomanantiales/qr-menu" target="_blank" rel="noopener noreferrer">Sucursal Manantiales 1</a>
                 </MenubarItem>
               </MenubarContent>
             </MenubarMenu>

@@ -20,8 +20,7 @@ export const SUCURSALES: Sucursal[] = [
     rating: 4.7,
     mapsUrl:
       "https://www.google.com/maps/place/Sushi+Roll+To+Go/@-31.3567257,-64.2429501,928m/data=!3m2!1e3!4b1!4m6!3m5!1s0x94329f5c2ffe6c5d:0x5bd7cb7c4d168897!8m2!3d-31.3567257!4d-64.2429501!16s%2Fg%2F11rgf91190?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D",
-    menuUrl:
-      "https://drive.google.com/file/d/1f1IljibiRasi6h5ZT9Uw9zYDOZgJlrTT/view?usp=sharing",
+    menuUrl: "/carta/recta-martinolli",
     tieneDelivery: true,
   },
   {
@@ -69,7 +68,7 @@ export const SUCURSALES: Sucursal[] = [
     mapsUrl:
       "https://www.google.com/maps/place/Sushi+Roll+To+Go+-+Manantiales+1/data=!4m2!3m1!1s0x0:0x74d5a1e89fa8ccad?sa=X&ved=1t:2428&hl=es&ictx=111",
     menuUrl:
-      "https://drive.google.com/file/d/1f1IljibiRasi6h5ZT9Uw9zYDOZgJlrTT/view?usp=sharing",
+      "https://menu.fu.do/sushirolltogomanantiales/qr-menu",
     tieneDelivery: true,
   },
 ];
